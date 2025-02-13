@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { Context } from "./main";
 import Verification from "./pages/Verification";
+
 const App = () => {
   const { setIsAuthenticated, setUser } = useContext(Context);
 

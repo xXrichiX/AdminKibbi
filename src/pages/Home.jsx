@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import Hero from "../components/Hero";
-import Instructor from "../components/Instructor";
-import Technologies from "../components/Technologies";
+import Hero from "../components/ui/Hero";
+import Instructor from "../components/ui/Instructor";
+import Technologies from "../components/ui/Technologies";
 import "../styles/Home.css";
 import { toast } from "react-toastify";
 import axios from "axios";

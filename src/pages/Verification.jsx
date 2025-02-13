@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import "../styles/Verification.css";
 import axios from "axios";
 import { Navigate } from "react-router-dom";
