@@ -1,16 +1,17 @@
-import React, { useContext } from "react";
-import Hero from "../components/ui/Hero/Hero";
-import Instructor from "../components/ui/Instructor";
-import Technologies from "../components/ui/Technologies";
-import "../styles/Home.css";
+import { useContext } from "react";
+import Hero from "../../components/ui/hero/Hero";
+import Instructor from "../../components/ui/Instructor/Instructor";
+import Technologies from "../../components/ui/Technologies/Technologies";
+import "./Home.css";
 import { toast } from "react-toastify";
 import axios from "axios";
-import { Context } from "../main";
-import { Navigate, useNavigate } from "react-router-dom";
-import Footer from "../layout/Footer/Footer";
+import { Navigate,} from "react-router-dom";
+import Footer from "../../layout/Footer/Footer";
+import { AuthContext } from "../../context/AuthContext";
+
 
 const Home = () => {
-  const { isAuthenticated, setIsAuthenticated, setUser } = useContext(Context);
+  const { isAuthenticated, setIsAuthenticated, setUser } = useContext(AuthContext);
 
   const logout = async () => {
     await axios

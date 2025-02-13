@@ -1,5 +1,5 @@
-import React from "react";
-import "../styles/Instructor.css";
+
+import "./Instructor.css";
 
 const Instructor = () => {
   return (

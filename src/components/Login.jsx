@@ -2,17 +2,16 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { Context } from "../main";
 import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 
 const Login = () => {
-  const { setIsAuthenticated, setUser } = useContext(Context);
+  const { setIsAuthenticated, setUser } = useContext(AuthContext);
   const navigateTo = useNavigate();
 
   const {
     register,
     handleSubmit,
-    formState: { errors },
   } = useForm();
   
   // Función de inicio de sesión

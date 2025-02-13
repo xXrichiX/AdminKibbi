@@ -1,11 +1,9 @@
-import React, { useContext, useState } from "react";
-import "../styles/ForgotPassword.css";
-import { Context } from "../../main";
+import { useState } from "react";
+import "./ForgotPassword.css";
 import axios from "axios";
 import { toast } from "react-toastify";
 
 const ForgotPassword = () => {
-  const { isAuthenticated } = useContext(Context);
   const [email, setEmail] = useState("");
 
   // Maneja el envío del correo para restablecer la contraseña
@@ -13,7 +11,7 @@ const ForgotPassword = () => {
     e.preventDefault();
     await axios
       .post(
-        "http://localhost:4000/api/v1/user/password/forgot",
+        "http://localhost:4000/api/v1/user/forgot-password",
         { email },
         {
           withCredentials: true,

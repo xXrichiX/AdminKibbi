@@ -1,10 +1,10 @@
 import  { useContext } from "react";
-import "../styles/Hero.css";
-import { Context } from "../../../main";
+import "./Hero.css";
+import { AuthContext } from "../../../context/AuthContext";
 
 const Hero = () => {
   // const { user } = 
-  useContext(Context);
+  useContext(AuthContext);
   return (
     <>
       <div className="hero-section">

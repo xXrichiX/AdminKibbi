@@ -1,12 +1,12 @@
 import {useContext, useState } from "react";
-import "../styles/Auth.css";
-import { Context } from "../../main";
+import "./Auth.css";
 import { Navigate } from "react-router-dom";
 import Register from "../../components/Register";
 import Login from "../../components/Login";
+import { AuthContext } from "../../context/AuthContext";
 
 const Auth = () => {
-  const { isAuthenticated } = useContext(Context);
+  const { isAuthenticated } = useContext(AuthContext);
   const [isLogin, setIsLogin] = useState(true);
 
   // Si el usuario ya está autenticado, redirigir al inicio

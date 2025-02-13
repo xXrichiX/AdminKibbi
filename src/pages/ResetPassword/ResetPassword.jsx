@@ -1,12 +1,12 @@
 import { useContext, useState } from "react";
-import "../styles/ResetPassword.css";
+import "./ResetPassword.css";
 import axios from "axios";
 import { Navigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import { Context } from "../../main";
+import { AuthContext } from "../../context/AuthContext";
 
 const ResetPassword = () => {
-  const { isAuthenticated, setIsAuthenticated, setUser } = useContext(Context);
+  const { isAuthenticated, setIsAuthenticated, setUser } = useContext(AuthContext);
   const { token } = useParams();
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");

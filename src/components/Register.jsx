@@ -1,18 +1,17 @@
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
-import { Context } from "../main";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { AuthContext } from "../context/AuthContext";
 
 const Register = () => {
-  const { isAuthenticated } = useContext(Context);
+  useContext(AuthContext);
   const navigateTo = useNavigate();
   
   const {
     register,
     handleSubmit,
-    formState: { errors },
   } = useForm();
 
   const handleRegister = async (data) => {
