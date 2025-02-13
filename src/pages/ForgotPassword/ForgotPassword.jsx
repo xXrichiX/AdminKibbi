@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import "../styles/ForgotPassword.css";
-import { Context } from "../main";
+import { Context } from "../../main";
 import axios from "axios";
 import { toast } from "react-toastify";
 

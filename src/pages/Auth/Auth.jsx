@@ -1,9 +1,9 @@
 import {useContext, useState } from "react";
 import "../styles/Auth.css";
-import { Context } from "../main";
+import { Context } from "../../main";
 import { Navigate } from "react-router-dom";
-import Register from "../components/Register";
-import Login from "../components/Login";
+import Register from "../../components/Register";
+import Login from "../../components/Login";
 
 const Auth = () => {
   const { isAuthenticated } = useContext(Context);

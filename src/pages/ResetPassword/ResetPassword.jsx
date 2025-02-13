@@ -3,7 +3,7 @@ import "../styles/ResetPassword.css";
 import axios from "axios";
 import { Navigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import { Context } from "../main";
+import { Context } from "../../main";
 
 const ResetPassword = () => {
   const { isAuthenticated, setIsAuthenticated, setUser } = useContext(Context);

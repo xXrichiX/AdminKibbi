@@ -1,6 +1,6 @@
 import  { useContext } from "react";
 import "../styles/Hero.css";
-import { Context } from "../../main";
+import { Context } from "../../../main";
 
 const Hero = () => {
   // const { user } = 
